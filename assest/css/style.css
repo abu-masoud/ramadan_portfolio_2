@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --bg-color: #e0e1dd;
+  --text-color: #778da9;
+  --heading-color: #0d1b2a;
+  --btn-color: #1b263b;
+  --hover-color: #415a77;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+nav {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav .nav__links a {
+  color: var(--text-color);
+}
+
+nav .nav__logo {
+  font-size: clamp(1rem, 2vw, 3rem);
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+nav button {
+  font-weight: 600;
+  min-width: 6rem;
+  padding: 0.2rem 0;
+  border: 1px solid #0d1b2a;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+button.sign__up:hover {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+}
+
+button.login {
+  background-color: var(--heading-color);
+  color: var(--text-color);
+}
+
+button.login:hover {
+  background-color: var(--text-color);
+  color: var(--heading-color);
+}
+
+.ri-menu-line {
+  display: none;
+}
+
+nav .nav__links a:hover {
+  color: var(--hover-color);
+}
+
+.header {
+  min-height: 100vh;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+}
+
+.header .left__section {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.header .left__section h1 {
+  color: var(--heading-color);
+  font-size: clamp(20px, 4vw, 60px);
+}
+
+.header .left__section h1 span {
+  color: var(--hover-color);
+}
+
+.header .left__section p {
+  font-size: clamp(14px, 2.5vh, 50px);
+}
+
+.header .left__section button {
+  width: 150px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  border: 1px slid #415a77;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.header .left__section button:hover {
+  background-color: #e0e1dd;
+  color: var(--heading-color);
+}
+
+.header img {
+  margin-top: 50px;
+  max-width: 30rem;
+  width: 70%;
+}
+
+.sell {
+  margin-top: 30px;
+  padding: 0 3rem;
+}
+
+.sell h2 {
+  color: var(--heading-color);
+  margin-bottom: 30px;
+}
+
+.sell .cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.sell .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: calc((100% - 40px) / 3);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.sell .card i {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.super {
+  margin-top: 50px;
+  padding: 0 3rem;
+}
+
+.super h2 {
+  color: var(--heading-color);
+  margin-bottom: 30px;
+}
+
+.super .tabs {
+  margin-bottom: 30px;
+}
+
+.super .tabs a {
+  background-color: var(--hover-color);
+  color: var(--heading-color);
+  border-radius: 10px;
+  padding: 5px 7px;
+  font-size: 13px;
+}
+
+.super .cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.super .card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  width: calc((100% - 80px) / 4);
+  border: 1px solid #0d1b2a;
+  border-radius: 15px;
+}
+
+.super .card img {
+  border-radius: 15px;
+}
+
+.super .card .price {
+  color: #415a77;
+}
+
+.super .card .price {
+  font-size: 10px;
+}
+
+.super .card .price span {
+  font-size: 13px;
+}
+
+.ri-btc-line {
+  font-size: 19px;
+}
+
+.card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__bottom .time {
+    font-size: 14px;
+    background-color: var(--text-color);
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+
+.card__bottom .bid {
+    font-size: 15px;
+    color: var(--heading-color);
+}
+
+.super .button {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.super button {
+  margin-top: 10px;
+  border: 1px solid #0d1b2a;
+  border-radius: 10px;
+  background-color: var(--text-color);
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.super button:hover {
+  background-color: #fff;
+  color: var(--hover-color);
+}
+
+.best__sellers {
+  padding: 0 3rem;
+  margin-bottom: 30px;
+}
+
+.best__sellers h2 {
+  margin-bottom: 30px;
+}
+
+.best__sellers .cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.best__sellers .card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  width: calc((100% - 40px) / 3);
+}
+
+.best__sellers .card img {
+  width: 20%;
+  border-radius: 15px;
+}
+
+.best__sellers .card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer {
+  padding: 0 3rem;
+  background-color: #000;
+  min-height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: clamp(20px, 4vw, 30px);
+  margin-bottom: 20px;
+  color: #415a77;
+}
+
+.footer__links {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.footer__links a {
+  color: var(--text-color);
+}
+
+.footer .footer__icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer .footer__icons a {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.footer .footer__copyright {
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .sell .card {
+    width: calc((100% - 20px) / 2);
+  }
+  .super .card {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+@media (max-width: 768px) {
+  nav .nav__links {
+    display: none;
+  }
+
+  .ri-menu-line {
+    display: block;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+  }
+
+  .header .left__section {
+    align-items: center;
+    text-align: center;
+  }
+
+  .super .card {
+    width: calc((100% - 40px) / 2);
+  }
+
+  .best__sellers .card {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .footer {
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sell .card {
+    width: 100%;
+  }
+
+  .super .card {
+    width: 100%;
+  }
+
+  .best__sellers .card {
+    width: 100%
+  }
+}
