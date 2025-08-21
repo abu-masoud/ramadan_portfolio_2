@@ -172,8 +172,8 @@ nav .nav__links a:hover {
 }
 
 .sell .card i {
-    font-size: 25px;
-    margin-right: 5px;
+  font-size: 25px;
+  margin-right: 5px;
 }
 
 .super {
@@ -196,6 +196,12 @@ nav .nav__links a:hover {
   border-radius: 10px;
   padding: 5px 7px;
   font-size: 13px;
+  transition: all 0.5s ease;
+}
+
+.super .tabs a:hover {
+  background-color: var(--bg-color);
+  color: var(--hover-color);
 }
 
 .super .cards {
@@ -237,21 +243,21 @@ nav .nav__links a:hover {
 }
 
 .card__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card__bottom .time {
-    font-size: 14px;
-    background-color: var(--text-color);
-    padding: 5px 7px;
-    border-radius: 10px;
+  font-size: 14px;
+  background-color: var(--text-color);
+  padding: 5px 7px;
+  border-radius: 10px;
 }
 
 .card__bottom .bid {
-    font-size: 15px;
-    color: var(--heading-color);
+  font-size: 15px;
+  color: var(--heading-color);
 }
 
 .super .button {
@@ -404,6 +410,6 @@ nav .nav__links a:hover {
   }
 
   .best__sellers .card {
-    width: 100%
+    width: 100%;
   }
 }
