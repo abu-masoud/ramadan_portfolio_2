@@ -93,9 +93,8 @@ nav .nav__links a:hover {
   min-height: 100vh;
   padding: 0 3rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   /* flex-wrap: wrap; */
 }
 
@@ -142,6 +141,7 @@ nav .nav__links a:hover {
   margin-top: 50px;
   max-width: 500px;
   width: 90%;
+  
 }
 
 .sell {
