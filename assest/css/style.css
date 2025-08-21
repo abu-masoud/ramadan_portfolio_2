@@ -29,8 +29,8 @@ a {
 nav {
   padding: 1rem 3rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 10px;
   align-items: center;
 }
 
@@ -374,7 +374,9 @@ nav .nav__links a:hover {
   }
 
   .header {
+    margin-top: 50px;
     flex-direction: column-reverse;
+    justify-content: flex-end;
   }
 
   .header .left__section {
