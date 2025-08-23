@@ -116,6 +116,7 @@ nav .nav__links a:hover {
 }
 
 .header .left__section button {
+  font-weight: 600;
   width: 150px;
   padding: 10px 0;
   display: flex;
@@ -163,6 +164,7 @@ nav .nav__links a:hover {
   width: calc((100% - 40px) / 3);
   background-color: #fff;
   border-radius: 10px;
+  min-height: 120px;
   padding: 10px 20px;
 }
 
